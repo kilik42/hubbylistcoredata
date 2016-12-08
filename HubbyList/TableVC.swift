@@ -43,7 +43,19 @@ class TableVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         let cell = UITableViewCell()
         
         let task = tasks[indexPath.row]
-        cell.textLabel?.text = "\(task.name)"
+        
+        
+        
+        if task.today {
+            
+            cell.textLabel?.text = "Today:- \(task.name!)"
+            
+            
+        }else{
+            
+             cell.textLabel?.text = "\(task.name)"
+        }
+       
         
         
         
@@ -66,6 +78,23 @@ class TableVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         
     }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let guest = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = guest.persistentContainer.viewContext
+        
+        
+        if editingStyle == .delete {
+            let task = tasks[indexPath.row]
+            context.delete(task)
+            guest.saveContext()
+        }
+    }
+    
+    
+    
+    
 }
 
 
