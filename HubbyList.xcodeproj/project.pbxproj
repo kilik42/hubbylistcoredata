@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1019F4DA1DF819C300DA579E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019F4D91DF819C300DA579E /* AppDelegate.swift */; };
-		1019F4DC1DF819C300DA579E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019F4DB1DF819C300DA579E /* ViewController.swift */; };
+		1019F4DC1DF819C300DA579E /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019F4DB1DF819C300DA579E /* TableVC.swift */; };
 		1019F4DF1DF819C300DA579E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1019F4DD1DF819C300DA579E /* Main.storyboard */; };
 		1019F4E21DF819C300DA579E /* HubbyList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1019F4E01DF819C300DA579E /* HubbyList.xcdatamodeld */; };
 		1019F4E41DF819C300DA579E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1019F4E31DF819C300DA579E /* Assets.xcassets */; };
 		1019F4E71DF819C300DA579E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1019F4E51DF819C300DA579E /* LaunchScreen.storyboard */; };
+		109032211DF8D2E5001DAB0A /* addMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109032201DF8D2E5001DAB0A /* addMeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1019F4D61DF819C300DA579E /* HubbyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubbyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1019F4D91DF819C300DA579E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1019F4DB1DF819C300DA579E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1019F4DB1DF819C300DA579E /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		1019F4DE1DF819C300DA579E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1019F4E11DF819C300DA579E /* HubbyList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HubbyList.xcdatamodel; sourceTree = "<group>"; };
 		1019F4E31DF819C300DA579E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1019F4E61DF819C300DA579E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1019F4E81DF819C300DA579E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		109032201DF8D2E5001DAB0A /* addMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addMeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,8 @@
 		1019F4D81DF819C300DA579E /* HubbyList */ = {
 			isa = PBXGroup;
 			children = (
+				109032221DF8D323001DAB0A /* controllers */,
 				1019F4D91DF819C300DA579E /* AppDelegate.swift */,
-				1019F4DB1DF819C300DA579E /* ViewController.swift */,
 				1019F4DD1DF819C300DA579E /* Main.storyboard */,
 				1019F4E31DF819C300DA579E /* Assets.xcassets */,
 				1019F4E51DF819C300DA579E /* LaunchScreen.storyboard */,
@@ -65,6 +67,15 @@
 				1019F4E01DF819C300DA579E /* HubbyList.xcdatamodeld */,
 			);
 			path = HubbyList;
+			sourceTree = "<group>";
+		};
+		109032221DF8D323001DAB0A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1019F4DB1DF819C300DA579E /* TableVC.swift */,
+				109032201DF8D2E5001DAB0A /* addMeVC.swift */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1019F4DC1DF819C300DA579E /* ViewController.swift in Sources */,
+				109032211DF8D2E5001DAB0A /* addMeVC.swift in Sources */,
+				1019F4DC1DF819C300DA579E /* TableVC.swift in Sources */,
 				1019F4E21DF819C300DA579E /* HubbyList.xcdatamodeld in Sources */,
 				1019F4DA1DF819C300DA579E /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +318,7 @@
 				1019F4ED1DF819C300DA579E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
