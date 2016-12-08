@@ -32,6 +32,7 @@ class TableVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         grabData()
         tableView.reloadData()
         
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
