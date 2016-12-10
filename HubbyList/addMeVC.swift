@@ -40,7 +40,7 @@ class addMeVC: UIViewController {
         
         guest.saveContext()
         
-        navigationController?.popToRootViewController(animated: true)
+        navigationController!.popToRootViewController(animated: true)
         
         
         
