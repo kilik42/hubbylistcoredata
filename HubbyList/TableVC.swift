@@ -89,6 +89,17 @@ class TableVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
             let task = tasks[indexPath.row]
             context.delete(task)
             guest.saveContext()
+            
+            
+            
+            do {
+                tasks = try context.fetch(Task.fetchRequest())
+                
+            } catch {
+                print("deleting failed")
+            }
+            
+            tableView.reloadData()
         }
     }
     
